@@ -27,7 +27,9 @@ const {
  */
 
 //Obtener todas las categorias - publico
-router.get('/',obtenerProductos);
+router.get('/',[
+    validarJWT
+],obtenerProductos);
 
 //OBtener una categoria por id - publico
 router.get('/:id',[

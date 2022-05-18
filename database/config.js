@@ -9,7 +9,7 @@ const dbConnection = async() => {
             useUnifiedTopology: true
         });
         
-        console.log('base de datos conestada');
+        console.log('base de datos conectada');
 
     } catch (error) {
         console.log(error);
